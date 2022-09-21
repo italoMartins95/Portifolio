@@ -1,0 +1,121 @@
+.strangerThings{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+
+   width: 100%;
+   height: 600px;  
+   
+   background-color: black;
+   background-image: url(../../image/strangerThingslogo.webp);
+   background-repeat: no-repeat;
+   background-position: 20px 50%;
+}
+
+.bannerContent{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+
+   width: 1000px;
+   height: 600px;
+
+   background-color: transparent;
+   border-radius: 15px;
+
+   margin: 0 20px;
+   padding: 0 10px;
+
+   z-index: 2;
+}
+
+.imgBanner{
+   position: relative;
+
+   width: 70px;
+   height: 95%;
+
+   background-color: white;
+   border-radius: 60px;
+
+   margin-left: 10px;
+   overflow: hidden;
+
+   transition: .5s ease;
+}
+
+.icon{
+   position: absolute;
+   left: 10px;
+   bottom: 10px;
+
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+
+   width: 400px;
+   height: 50px;
+
+   border-radius: 30px;
+   background-color: rgba(38, 36, 36, 0.614);
+   color: white;
+}
+
+.imgIco{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 40px;
+   height: 40px;
+
+   background-color: transparent;
+   border-radius: 50%;
+
+   margin: 0 13px 0 8px;
+   overflow: hidden;
+}
+
+.imgIco > img{
+   width: 105%;
+   height: 105%;
+}
+
+.describeIco{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+
+   height: 50px;
+   font-family: arial;
+}
+
+.describeIco span:nth-child(1){
+   font-weight: bold;
+}
+
+#elevenImage{
+   background: url(../../image/eleven.jpg);
+   background-size: cover;
+}
+
+#willImage{
+   background: url(../../image/will.jpg);
+   background-size: cover;
+}
+
+#dustinImage{
+   background: url(../../image/dustin.jpg);
+   background-size: cover;
+}
+
+#lucasImage{
+   background: url(../../image/lucas.jpg);
+   background-size: cover;
+}
+
+#mikeImage{
+   background: url(../../image/mike.jfif);
+   background-size: cover;
+}

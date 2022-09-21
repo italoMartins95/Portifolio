@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+#enderecos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 600px;
+}
+
+#enderecosContent{
+    width: 500px;
+    height: 400px;
+}
+
+#enderecos form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: 15px auto;
+    padding: 5px;
+    font-family: 'Cairo';
+}
+
+#enderecos form input{
+    height: 33px;
+
+    outline: none;
+    margin: 25px 5px 10px 5px;
+}
+
+#enderecos form button{
+    width: 90px;
+    height: 35px;
+
+    background-color: black;
+    color: white;
+
+    cursor: pointer;
+}
+
+#enderecosContent img{
+    width: 250px;
+    height: 250px;
+
+    transform: translate(20px , -10px);
+}
+
+#enderecos form button:hover{
+    color: rgb(200, 163, 16);
+}
+
+#ederecoResult p{
+    margin: 5px 0;
+
+    font-family: 'Cairo';
+}
+
+#guardar{
+    width: 200px;
+    height: 200px;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+#guardar img{
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+}
+
+#listaEnderecos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    
+    width: 500px;
+    height: 500px;
+}
+
+#listaEnderecosContent{
+    width: 500px;
+    height: 300px;
+
+    outline: none;
+    resize: vertical;
+}
+
+#listaEnderecos button{
+    width: 90px;
+    height: 35px;
+
+    background-color: black;
+    color: white;
+
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+#listaEnderecos button:hover{
+    color: rgb(200, 163, 16);
+}

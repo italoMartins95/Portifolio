@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   width: 100%;
+   height: 80px;
+
+   background-color: rgb(0, 0, 0);
+   color: white;
+
+   box-shadow: 0 1px 15px rgba(20, 20, 20, 0.866);
+}
+
+header a{
+   color: white;
+   text-decoration: none;
+}
+
+header span{
+   font-family: 'Cairo';
+   font-size: 25px;
+   
+   margin: 0 60px;
+}
+
+header ul{
+   position: absolute;
+   right: 20px;
+	
+   list-style: none;
+   font-family: 'Cairo';
+}
+
+header ul li{ 
+   display: inline-block;
+
+   margin: 0 20px;
+   cursor: pointer;
+
+   font-size: 17px;
+}
+
+header ul li:hover{
+   text-decoration: underline;
+} 
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 70%;
+
+    font-family: 'Cairo';
+
+    min-height: 800px;
+    margin: 0px auto;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 200px;
+    padding-top: 50px;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+
+    margin: 20px 0;
+
+    opacity: 0;
+    transition: 1.5s ease;
+
+    transform: translate3d(-50px, 0, 0);
+}
+
+.viss{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.text{
+    width: 700px;
+
+    font-size: 21px;
+}
+
+.text h2{
+    margin: 50px 0;
+}
+
+.text p{
+    text-align: justify;
+
+    margin-bottom: 20px;
+}
+
+.text h2:after{
+    content: '';
+    position: relative;
+
+    display: block;
+    width: 70px;
+    height: 3px;
+
+    background-color: black;
+}
+
+.listaConhecimentos{
+    list-style-type: '\1F5F8\00A0\00A0';
+    columns: 2;
+    list-style-position: inside;
+
+    margin: 20px 0;
+}
+
+abbr{
+    text-decoration: none;
+    font-style: oblique;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 200px;
+ 
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer div{
+    margin-bottom: 20px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+
+    margin: 0 10px;
+}

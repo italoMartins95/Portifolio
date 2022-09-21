@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+#calculator{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 600px;
+
+    font-family: 'Press Start 2P';
+    font-size: 45px;
+    text-align: center;
+
+    background-color: rgb(18, 18, 18);
+    background-image: url(../../image/math_one.jpg);
+    background-size:cover;
+
+    color: white;
+
+    margin: 10px 0 ;
+}
+
+#calc{
+    position: relative;
+
+    width: 300px;
+    height: 450px;
+
+    padding-top: 1px;
+    
+    background-color: rgb(22, 21, 21);
+    border-radius: 3px;
+
+    box-shadow: 0 5px 20px black , 0 0 15px black;
+}
+
+#display{
+    position: relative;
+
+    width: 95%;
+    height: 170px;
+
+    margin: 10px auto;
+
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 20px;
+}
+
+#displayContent{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    width: 100%;
+    height: 120px;
+
+    border-bottom: dashed 1px white;
+    color: #6b6666;
+}
+
+#displayContent p{
+    margin: 5px 5px;
+}
+
+#displayCalc{
+    position: absolute;
+    top: 120px;
+    left: 0;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: calc(100% - 10px);
+    height: 50px;
+
+    border: none;
+    border-top: 1px dashed black;
+    outline: none;
+
+    padding: 0 5px;
+
+    font-size: 20px;
+    text-align: right;
+}
+
+#displayCalc p{
+    margin: 5px 5px;
+}
+
+.conteiner{
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    width: 100%;
+
+    transform: translate(-50% , 0);
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+
+    width: 97%;
+
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.button{
+    width: 65px;
+    height: 50px;
+
+    font-weight: bold;
+    font-size: 18px;
+
+    border: none;
+
+    background-color: rgba(0, 0, 0, 0.349);
+    color: white;
+}
+
+.c{
+    background-color: rgba(220, 20, 60, 0.350);
+    color: white;
+}
+
+.igual{
+    background-color: hsla(205, 100%, 49%, 0.350);
+    color: white;
+}
+
+.right{
+    background-color: #7d7d7d4f;
+    color: white;
+
+    font-weight: bold;    
+}
+
+.button:hover{
+    border: 2px solid white; 
+    border-radius: 2px;   
+
+    cursor: pointer;
+}
