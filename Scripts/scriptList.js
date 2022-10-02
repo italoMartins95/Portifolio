@@ -90,10 +90,10 @@ function openCloseListItensOk(){
 
     if(classe == "closeItensOk"){
         this.parentNode.className = "openItensOk"
-        this.src = "../image/close.svg"
+        this.src = "Images/close.svg"
     }else{
         this.parentNode.className = "closeItensOk"
-        this.src = "../image/lixeira.png"
+        this.src = "Images/lixeira.png"
     }
 
 }

@@ -5,14 +5,15 @@
     justify-content: space-around;
     align-items: center;
 
-    height: 600px;
+    width: 20%;
+    height: 100%;
 
     font-family: 'Press Start 2P';
     font-size: 45px;
     text-align: center;
 
     background-color: rgb(18, 18, 18);
-    background-image: url(../../image/math_one.jpg);
+    background-image: url(../images/math_one.jpg);
     background-size:cover;
 
     color: white;
