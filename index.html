@@ -24,207 +24,255 @@
 
     <title>Italo Martins</title>
 </head>
-<body>
+<body onload="start()">
 	<header>
 		<span>Italo Martins</span>
 		<ul id="menu">
 		   <li><a href="#" target="_self">Inicio</a></li>
-		   <li><a href="#" target="_self">Projetos</a></li>
+		   <li><a href="#" target="_self">Conhecimentos</a></li>
+		   <li><a href="" target="_self">Meus projetos</a></li>
 		   <li><a href="../HtmlCurricullum/index.html" target="_blank">Curricullum</a></li>
-		   <li><a href="#" target="_self">Sobre</a></li>
 		   <li><a href="#" target="_self">Contato</a></li>
+		   <li><a href="#" target="_self">Sobre</a></li>
 		</ul>
 	</header>
-	<aside id="saudacao">
-		<h1>Olá ,</h1>
-		<p>
+	<section id="saudacao">
+		<h1 class="saudacoes">Olá ,</h1>
+		<p class="saudacoes">
 			Sou Web Developer <br>
 			Focado em JS
 		</p>
-	</aside>
+	</section>
+	<section id="conhecimentos">
+		<h2 class="h2">Conhecimentos</h2>
+		<img src="Images/ConhecimentosImage.png" alt="Conhecimentos">
+	</section>
 	<section id="projetos">
-		<h2>Meus Projetos</h2>
-		<nav>
-			<div id="projectCalc" class="itensMenuProjetos">
-				<i class="fa-solid fa-calculator"></i>
-			</div>
-			<div id="projectLista" class="itensMenuProjetos">
-				<i class="fa-solid fa-list-check"></i>
-			</div>
-			<div id="projetoGaleriaSt" class="itensMenuProjetos">
-				<i class="fa-solid fa-image"></i>
-			</div>
-			<div id="projetoConversor" class="itensMenuProjetos">
-				<i class="fa-solid fa-rotate"></i>
-			</div>
-			<div id="projetoBuscadorEnderecos" class="itensMenuProjetos">
-				<i class="fa-solid fa-location-dot"></i>
-			</div>
-		</nav>
+		<h2 class="h2">Meus Projetos</h2>
 		<div id="projetosContent">
+			<nav>
+				<div id="projectCalc" class="itensMenuProjetos">
+					<i class="fa-solid fa-calculator"></i>
+				</div>
+				<div id="projectLista" class="itensMenuProjetos">
+					<i class="fa-solid fa-list-check"></i>
+				</div>
+				<div id="projetoGaleriaSt" class="itensMenuProjetos">
+					<i class="fa-solid fa-image"></i>
+				</div>
+				<div id="projetoConversor" class="itensMenuProjetos">
+					<i class="fa-solid fa-rotate"></i>
+				</div>
+				<div id="projetoBuscadorEnderecos" class="itensMenuProjetos">
+					<i class="fa-solid fa-location-dot"></i>
+				</div>
+			</nav>
 			<div id="carrosselProjetos">
-				<article id="calculator" class="projects">
-					<div>
-						Your professional <br> calculator...
-					</div>
-					<form id="calc" onsubmit="submiteDefault()">
-						<div id="display">
-							<div id="displayContent"></div>
-							<input id="displayCalc" type="text" placeholder="...">
+				<div id="carrosseContent">
+					<article id="calculator" class="projects">
+						<div>
+							Your professional <br> calculator...
 						</div>
-						<div class="conteiner">
-							<div class="content">
-								<input type="button" value="7" class="button" onclick="botoes(value)">
-								<input type="button" value="8" class="button" onclick="botoes(value)">
-								<input type="button" value="9" class="button" onclick="botoes(value)">
-								<input type="button" value="/" class="button right" onclick="botoes(value)">
+						<form id="calc" onsubmit="submiteDefault()">
+							<div id="display">
+								<div id="displayContent"></div>
+								<input id="displayCalc" type="text" placeholder="...">
 							</div>
-							<div class="content">
-								<input type="button" value="4" class="button" onclick="botoes(value)">
-								<input type="button" value="5" class="button" onclick="botoes(value)">
-								<input type="button" value="6" class="button" onclick="botoes(value)">
-								<input type="button" value="*" class="button right" onclick="botoes(value)">
-							</div>
-							<div class="content">
-								<input type="button" value="1" class="button" onclick="botoes(value)">
-								<input type="button" value="2" class="button" onclick="botoes(value)">
-								<input type="button" value="3" class="button" onclick="botoes(value)">
-								<input type="button" value="-" class="button right" onclick="botoes(value)">
-							</div>
-							<div class="content">
-								<input type="button" value="C" class="button c" id="bottomLeft" onclick="clean()">
-								<input type="button" value="0" class="button" onclick="botoes(value)">
-								<input type="button" value="=" class="button igual" onclick="calcular()">
-								<input type="button" value="+" class="button right" onclick="botoes(value)">
-							</div> 
-						</div>       
-					</form>
-				</article>
-				<article class="checkList">
-					<h2>Experimente essa <br> lista de compras</h2>
-					<div id="checkListContent">
-						<h2>Lista de Compras</h2>
-						<form id="checkListBusca">
-							<input type="text" id="buscar_inserir" placeholder="buscar item">
-							<label id="labelBuscarInserir"> 
-								<img src="Images/cartShopping.svg" alt="carrinho">
-							</label>
+							<div class="conteiner">
+								<div class="content">
+									<input type="button" value="7" class="button" onclick="botoes(value)">
+									<input type="button" value="8" class="button" onclick="botoes(value)">
+									<input type="button" value="9" class="button" onclick="botoes(value)">
+									<input type="button" value="/" class="button right" onclick="botoes(value)">
+								</div>
+								<div class="content">
+									<input type="button" value="4" class="button" onclick="botoes(value)">
+									<input type="button" value="5" class="button" onclick="botoes(value)">
+									<input type="button" value="6" class="button" onclick="botoes(value)">
+									<input type="button" value="*" class="button right" onclick="botoes(value)">
+								</div>
+								<div class="content">
+									<input type="button" value="1" class="button" onclick="botoes(value)">
+									<input type="button" value="2" class="button" onclick="botoes(value)">
+									<input type="button" value="3" class="button" onclick="botoes(value)">
+									<input type="button" value="-" class="button right" onclick="botoes(value)">
+								</div>
+								<div class="content">
+									<input type="button" value="C" class="button c" id="bottomLeft" onclick="clean()">
+									<input type="button" value="0" class="button" onclick="botoes(value)">
+									<input type="button" value="=" class="button igual" onclick="calcular()">
+									<input type="button" value="+" class="button right" onclick="botoes(value)">
+								</div> 
+							</div>       
 						</form>
-						<ul id="checkListItens">
-							<li>
-								<input type="checkbox" id="0" onchange="removeItem(id)"> Carne
-							</li>
-							<li>
-								<input type="checkbox" id="1" onchange="removeItem(id)"> Arroz
-							</li>
-							<li>
-								<input type="checkbox" id="2" onchange="removeItem(id)"> Feijão
-							</li>
-						</ul>
-						<div id="listaOkOpenClosed" class="closeItensOk">
-							<img src="Images/lixeira.png" alt="cancel" id="imgOpenClose">
-							<ul id="checkListItensOk"></ul>
-						</div>			
-					</div>
-				</article>
-				<article class="strangerThings projects">
-					<div class="bannerContent">
-						<div id="elevenImage" class="imgBanner">
-							<!-- <img src="Images/eleven.jpg" alt="mike"> -->
-						   <div class="icon">	
-								  <div class="imgIco">	
-									<img src="Images/11ico.png" alt="icon">
-								  </div>
-								<div class="describeIco">
-									<span>Eleven</span>
-									<span>O meu herói é o meu pai.</span>
+					</article>
+					<article class="checkList">
+						<h2>Experimente essa <br> lista de compras</h2>
+						<div id="checkListContent">
+							<h2>Lista de Compras</h2>
+							<form id="checkListBusca">
+								<input type="text" id="buscar_inserir" placeholder="buscar item">
+								<label id="labelBuscarInserir"> 
+									<img src="Images/cartShopping.svg" alt="carrinho">
+								</label>
+							</form>
+							<ul id="checkListItens">
+								<li>
+									<input type="checkbox" id="0" onchange="removeItem(id)"> Carne
+								</li>
+								<li>
+									<input type="checkbox" id="1" onchange="removeItem(id)"> Arroz
+								</li>
+								<li>
+									<input type="checkbox" id="2" onchange="removeItem(id)"> Feijão
+								</li>
+							</ul>
+							<div id="listaOkOpenClosed" class="closeItensOk">
+								<img src="Images/lixeira.png" alt="cancel" id="imgOpenClose">
+								<ul id="checkListItensOk"></ul>
+							</div>			
+						</div>
+					</article>
+					<article class="strangerThings projects">
+						<div class="bannerContent">
+							<div id="elevenImage" class="imgBanner">
+							   <div class="icon">	
+									  <div class="imgIco">	
+										<img src="Images/11ico.png" alt="icon">
+									  </div>
+									<div class="describeIco">
+										<span>Eleven</span>
+										<span>O meu herói é o meu pai.</span>
+									   </div>
+							   </div>
+							</div>
+							<div id="willImage" class="imgBanner">
+							   <div class="icon">	
+									  <div class="imgIco">	
+										<img src="Images/wIco.png" alt="icon">
+									  </div>
+									<div class="describeIco">
+										 <span>Will</span>
+										 <span>Às vezes os bandidos são espertos também.</span>
+									   </div>
+							   </div>
+							</div>
+							<div id="dustinImage" class="imgBanner">
+							   <div class="icon">	
+									  <div class="imgIco">	
+										 <img src="Images/dIco.webp" alt="icon">
+									 </div>
+									<div class="describeIco">
+										 <span>Justin</span>
+										 <span>Ela é nossa amiga, e ela é louca.</span>
 								   </div>
-						   </div>
-						</div>
-						<div id="willImage" class="imgBanner">
-							<!-- <img src="Images/will.jpg" alt="mike"> -->
-						   <div class="icon">	
-								  <div class="imgIco">	
-									<img src="Images/wIco.png" alt="icon">
-								  </div>
-								<div class="describeIco">
-									 <span>Will</span>
-									 <span>Às vezes os bandidos são espertos também.</span>
+							   </div>
+							</div>
+							<div id="lucasImage" class="imgBanner">
+							   <div class="icon">	
+									  <div class="imgIco">	
+										 <img src="Images/sIco.png" alt="icon">
+									  </div>
+									<div class="describeIco">
+										 <span>Lucas</span>
+										 <span>Amigos não mentem.</span>
 								   </div>
-						   </div>
-						</div>
-						<div id="dustinImage" class="imgBanner">
-							<!-- <img src="Images/dustin.jpg" alt="mike"> -->
-						   <div class="icon">	
-								  <div class="imgIco">	
-									 <img src="Images/dIco.webp" alt="icon">
-								 </div>
-								<div class="describeIco">
-									 <span>Justin</span>
-									 <span>Ela é nossa amiga, e ela é louca.</span>
 							   </div>
-						   </div>
-						</div>
-						<div id="lucasImage" class="imgBanner">
-							<!-- <img src="Images/lucas.jpg" alt="mike"> -->
-						   <div class="icon">	
-								  <div class="imgIco">	
-									 <img src="Images/sIco.png" alt="icon">
-								  </div>
-								<div class="describeIco">
-									 <span>Lucas</span>
-									 <span>Amigos não mentem.</span>
+							</div>
+							<div id="mikeImage" class="imgBanner">
+							   <div class="icon">
+									  <div class="imgIco">	
+										 <img src="Images/mIco.jpg" alt="icon">
+									  </div>
+									<div class="describeIco">
+										 <span>Mike</span>
+										 <span>Amigos contam coisas uns pros outros.</span>
+								   </div>
 							   </div>
-						   </div>
+							</div>
 						</div>
-						<div id="mikeImage" class="imgBanner">
-							<!-- <img src="Images/mike.jfif" alt="mike"> -->
-						   <div class="icon">
-								  <div class="imgIco">	
-									 <img src="Images/mIco.jpg" alt="icon">
-								  </div>
-								<div class="describeIco">
-									 <span>Mike</span>
-									 <span>Amigos contam coisas uns pros outros.</span>
-							   </div>
-						   </div>
+					</article>
+					<article id="binaryConvert" class="projects">
+						<h1>Conversor binário para decimal</h1>
+						<div>
+							<label for="binario" id="labelFirst">Insira binário:</label>
+							<input type="number" placeholder="Digite um número" id="binario">
+							<button id="btnConvert">to Convert</button>
+						</div> 
+						<div>
+							<label for="decimal" id="labelLast">Resultado da conversão para decimal:</label>
+							<p id="decimal"></p>
+						</div> 
+						<div id="reverseDiv">
+							<img src="Images/reverse.svg" alt="reverter" id="imgModify">
+							<button id="btnModify">Trocar: decimal para binário</button>
 						</div>
-					</div>
-				</article>
-				<article id="binaryConvert" class="projects">
-					<h1>Conversor binário para decimal</h1>
-					<div>
-						<label for="binario" id="labelFirst">Insira binário:</label>
-						<input type="number" placeholder="Digite um número" id="binario">
-						<button id="btnConvert">to Convert</button>
-					</div> 
-					<div>
-						<label for="decimal" id="labelLast">Resultado da conversão para decimal:</label>
-						<p id="decimal"></p>
-					</div> 
-					<div id="reverseDiv">
-						<img src="Images/reverse.svg" alt="reverter" id="imgModify">
-						<button id="btnModify">Trocar: decimal para binário</button>
-					</div>
-				</article>
-				<article id="enderecos" class="projects">
-					<div id="enderecosContent">
-						<form id="formEndereco">
-							<h2>Encontre seu endereço</h2>
-							<div class="formContent">
-								<label>Cep:</label>
-								<input type="text" id="cepNumber" placeholder="00.000-000">
-								<button>Buscar</button>
-							</div>	
-						</form>
-						<div id="ederecoResult">
-							<p id="logradouro"></p>
-							<p id="bairro"></p>
-							<p id="cidade_estado"></p>
+					</article>
+					<article id="enderecos" class="projects">
+						<div id="enderecosContent">
+							<form id="formEndereco">
+								<h2>Encontre seu endereço</h2>
+								<div class="formContent">
+									<label>Cep:</label>
+									<input type="text" id="cepNumber" placeholder="00.000-000">
+									<button>Buscar</button>
+								</div>	
+							</form>
+							<div id="ederecoResult">
+								<p id="logradouro"></p>
+								<p id="bairro"></p>
+								<p id="cidade_estado"></p>
+							</div>
 						</div>
-					</div>
-				</article>
+					</article>
+				</div>
 			</div>
+		</div>
+	</section>
+	<section id="sobre">
+		<h2 class="h2">Sobre mim</h2>
+		<div id="sobreContent">
+			<aside class="cards">
+				<img src="Images/java.svg" alt="java" class="card">
+				<img src="Images/html.svg" alt="html" class="card">
+				<img src="Images/css.svg" alt="css" class="card">
+				<img src="Images/javaScript.svg" alt="javaScript" class="card">
+				<img src="Images/react.svg" alt="react" class="card">
+			</aside>
+			<aside class="text">
+				<p>
+					<strong>Java</strong> foi a primeira linguagem de programação que eu aprendi. Estudar <strong>Java</strong> assim de cara foi bem difícil pois essa é uma linguagem fortemente tipada e tem uma sintaxe bem extença. Mas os estudos abriram minha mente para entender vários conceitos importantes de <strong><abbr title="Programação Orientada a Objetos">POO</abbr></strong>, tais como:
+				</p>
+				<ul class="listaConhecimentos">
+					<li>Classes</li>
+					<li>Objetos</li>
+					<li>Instanciamento</li>
+					<li>Atributos & Metodos</li>
+					<li>Tipos primitivos de dados</li>
+					<li>Visibilidade</li>
+					<li>Herança</li>
+					<li>Polimorfismo</li>
+					<li>Interfaces</li>
+					<li>Abstração</li>
+				</ul>
+				<p>
+					Em seguida passei a estudar <strong><abbr title="Hypertext Markup Language">HTML5</abbr></strong> e <strong><abbr title="Cascading Style Sheets ">CSS3</abbr></strong> e comecei a desenvolver minhas primeiras páginas. Aprender essas duas linguagens de marcação foi muito divertido pra mim, então decidir me tornar um Dev FrontEnd e pra isso eu não poderia deixar de lado o tão famoso <strong>JavaScript</strong>.
+				</p>
+				<p>
+					Me apaixonei por essa linguagem e desde então tenho aprendido cada vez mais a usar essa ferramenta. Atualmente voltei minha atenção a uma biblioteca poderosa chamada <Strong>React</Strong>, onde estou construindo meus primeiros projetos.
+				</p>
+				<p>
+					Meu objetivo a curto prazo dominar tacnologias que façam de mim um excelente <strong>Desenvolvedor FrontEnd</strong> e a longo prazo pretendo desenvolver habilidades que me façam ir alem do que os olhos dos usuários podem ver, quero ser um <strong>Desevolvedor FullStack</strong> e dominar outras tecnologias como:
+				</p>
+				<ul class="listaConhecimentos">
+					<li>Java</li>
+					<li>SQL</li>
+					<li>NoSQL</li>
+					<li>AWS</li>
+					<li>ReactNative</li>
+					<li>Python</li>
+				</ul>
+			</aside>
 		</div>
 	</section>
 	<footer>

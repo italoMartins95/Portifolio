@@ -4,7 +4,7 @@ const menuGaleria = document.getElementById('projetoGaleriaSt')
 const menuConversor = document.getElementById('projetoConversor')
 const menuEndereco = document.getElementById('projetoBuscadorEnderecos')
 
-const carrosselProjetos = document.getElementById('carrosselProjetos')
+const carrosselProjetos = document.getElementById('carrosseContent')
 
 // Funções
 
@@ -34,3 +34,21 @@ menuEndereco.addEventListener('click' , () => {
     teste(400)
 })
 
+const scrol = new IntersectionObserver( entry => {
+    entry[0].target.classList.add('viss')
+    console.log(entry)
+})
+
+Array.from(document.querySelectorAll('.card')).forEach(element => {
+    scrol.observe(element)
+})
+
+Array.from(document.querySelectorAll('.itensMenuProjetos')).forEach(element => {
+    scrol.observe(element)
+})
+
+function start(){
+    Array.from(document.querySelectorAll('.saudacoes')).forEach(element => {
+        element.classList.add('viss')
+    })
+}
