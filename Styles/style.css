@@ -131,10 +131,106 @@ main{
     width: 100%;
 
     font-family: 'Cairo';
+
+    margin-top: 50px;
 }
 
 #projetos > h2{
     font-size: 45px;
+}
+
+#melhoresProjetos{
+    position: relative;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 50px 0;
+
+    
+    background-color: #1a1d27bb;
+
+}
+
+.cardProject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    width: 650px;
+    height: 550px;
+
+    background-color: white;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.textCard{
+    position: absolute;
+    bottom: 5%;
+    left: 48%;
+
+    transform: translateX(-50%);
+    opacity: 0;
+
+    width: 90%;
+
+    text-align: justify;
+
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.775);
+    color: white;
+    border-radius: 5px;
+
+    padding: 35px 15px;
+
+    font-family: 'Cairo';
+}
+
+.textCard span{
+    background-color: white;
+    color: black;
+
+    padding: 0 5px;
+
+    font-weight: bold;
+}
+
+.textCard i{
+    margin-left: 10px;
+}
+
+.textCard a{
+    color: white;
+    
+    text-decoration: none;
+}
+
+.textCard a:hover{
+    text-decoration: underline;
+}
+
+.plann span{
+    color: #df658f;
+}
+
+#projetoPlanner p{
+    background-color: #604cd4e0;
+}
+
+.exibirTextCard{
+    opacity: 1;
+    left: 50%;
+}
+
+.pequenosProjetosH2{
+    margin: 50px;
 }
 
 #projetosContent{

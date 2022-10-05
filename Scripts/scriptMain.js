@@ -12,6 +12,10 @@ function teste(valor){
     carrosselProjetos.style.marginLeft = `-${valor}%`
 }
 
+function exibirCardText(id){
+    window.alert(id)
+}
+
 // Eventos
 
 menuCalc.addEventListener('click' , () => {
@@ -32,6 +36,19 @@ menuConversor.addEventListener('click' , () => {
 
 menuEndereco.addEventListener('click' , () => {
     teste(400)
+})
+
+
+Array.from(document.querySelectorAll('.cardProject')).forEach(el => {
+    el.addEventListener('mousemove' , () => {
+        el.children[1].classList.add('exibirTextCard')
+    })
+})
+
+Array.from(document.querySelectorAll('.cardProject')).forEach(el => {
+    el.addEventListener('mouseout' , () => {
+        el.children[1].classList.remove('exibirTextCard')
+    })
 })
 
 const scrol = new IntersectionObserver( entry => {
