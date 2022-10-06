@@ -36,6 +36,7 @@
 		   <li><a href="#" target="_self">Contato</a></li>
 		   <li><a href="#" target="_self">Sobre</a></li>
 		</ul>
+		<div id="menuHamburguer"></div>
 	</header>
 	<section id="saudacao">
 		<h1 class="saudacoes">Olá ,</h1>
@@ -46,7 +47,10 @@
 	</section>
 	<section id="conhecimentos">
 		<h2 class="h2">Conhecimentos</h2>
-		<img src="Images/ConhecimentosImage.svg" alt="Conhecimentos">
+		<picture>
+			<source media="(max-width: 400px)" srcset="Images/ConhecimentosImagePequena.svg">
+			<img src="Images/ConhecimentosImage.svg" alt="Conhecimentos">
+		</picture>
 	</section>
 	<section id="projetos">
 		<h2 class="h2">Ultimos Trabalhos</h2>
@@ -64,7 +68,7 @@
 				</p>
 			</aside>
 		</article>
-		<h2 class="pequenosProjetosH2">Pequenos projetos</h2>
+		<h2 class="h2">Pequenos projetos</h2>
 		<div id="projetosContent">
 			<nav>
 				<div id="projectCalc" class="itensMenuProjetos">

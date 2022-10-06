@@ -53,6 +53,52 @@ header ul li:hover{
    text-decoration: underline;
 } 
 
+#menuHamburguer{
+    position: relative;
+
+    display: none;
+
+    margin: 0 20px;	
+    
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+    display: none;
+}
+
+#menuHamburguer:before{
+    content: '';
+    
+    position: absolute;
+    top: 28%;
+    left: 13%;
+
+    width: 74%;
+    height: 10%;
+
+    background-color: white;
+    border-radius: 5px;
+
+    transition: 1s ease;
+}
+
+#menuHamburguer:after{
+    content: '';
+    
+    position: absolute;
+    top: 60%;
+    left: 13%;
+
+    width: 50%;
+    height: 10%;
+
+    background-color: white;
+    border-radius: 5px;
+
+    transition: 1s ease;
+}
+
 main{
     width: 90%;
     min-height: 800px;
@@ -100,13 +146,12 @@ main{
     align-items: center;
 
     font-family: 'Cairo';
-    font-size: 30px;
-
     color: #1a1d27;
 }
 
 .h2{
     margin: 40px 0;
+    font-size: 45px;
 }
 
 .h2::after{
@@ -133,10 +178,6 @@ main{
     font-family: 'Cairo';
 
     margin-top: 50px;
-}
-
-#projetos > h2{
-    font-size: 45px;
 }
 
 #melhoresProjetos{
@@ -418,4 +459,80 @@ footer img{
     height: 50px;
 
     margin: 0 10px;
+}
+
+@media (max-width: 400px){
+    header{
+        height: 60px;
+    }
+
+    header span{
+        margin: 0 25px;
+
+        font-size: 22px;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #menuHamburguer{
+        display: block;
+    }    
+
+    #melhoresProjetos{
+        flex-direction: column;
+    }
+
+    .cardProject{
+        width: 270px;
+        height: 200px;
+
+        margin: 30px 0;
+    }
+
+    .cardProject img{
+        width: 190px;
+        height: 190px;
+    }
+
+    .textCard{
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+    
+        transform: translateX(-50%);
+    
+        width: 220px;
+    
+        text-align: justify;
+    
+        transition: .5s ease;
+        background-color: rgba(0, 0, 0, 0.775);
+        color: white;
+        border-radius: 5px;
+    
+        padding: 5px 15px;
+    
+        font-family: 'Cairo';
+        font-size: 7px;
+    }
+
+    .h2{
+        font-size: 30px;
+
+        margin: 10px 0;
+    }
+
+    #projetos{
+        margin: 0;
+    }
+
+    #projetosContent{
+        display: none;
+    }
+    
+    #sobre{
+        display: none;
+    }
 }
