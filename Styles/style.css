@@ -506,6 +506,11 @@ footer img{
         flex-direction: column;
 
         padding: 0;
+        margin: 25px;
+    }
+
+    #conhecimentos{
+        margin-bottom: 26px;
     }
 
     .cardProject{
@@ -576,9 +581,120 @@ footer img{
     }
 
     #projetosContent{
+        flex-direction: column;
+    }
+
+    #projetosContent nav{
+        position: relative;
+
+        width: 100%;
+        height: 50px;
+
+        flex-direction: row;
+
+        margin: 30px 0;
+    }
+
+    .itensMenuProjetos{
+        background-color: #1a1d2779;
+        
+        transform: translate3d(0, 0, 0);
+    }
+    
+    .itensMenuProjetos{
+        opacity: 1;
+    }
+
+    #calculator{
+        background-color: transparent !important;
+        background-image: none !important;
+    }
+
+    #calculator > div{
+        display: none;
+    }
+
+    #calculator #calc{
+        width: 280px;
+        height: 420px;
+
+        box-shadow: none;
+    }
+
+    .checkList{
+        background-image: none !important;
+
+        overflow: hidden;
+    }
+
+    #checkListContent{
+        width: 80% !important;
+        height: 90% !important;
+
+        right: 52px !important;
+    }
+
+    .checkList > h2{
         display: none;
     }
     
+    .strangerThings{
+        overflow: hidden;
+    } 
+
+    .bannerContent{
+        justify-content: normal !important;
+
+        width: 100% !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .imgBanner{
+        width: 60px;
+    }
+    
+    #binaryConvert > h1{
+        margin: 20px 0 !important;
+
+        font-size: 28px !important;
+    } 
+
+    #enderecosContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        background-image: url(../Images/backgroundBuscarCepPequeno.svg);
+    }
+
+    #cepNumber{
+        padding: 0 5px;
+    }
+    
+    #formEndereco{
+        align-items: center !important;
+    }
+
+    #ederecoResult{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        width: 80%;
+        height: 250px;
+
+        background-color: rgba(0, 0, 0, 0.162);
+        border-radius: 5px;
+    }
+
+    .enderecoResposta{
+        font-size: 20px;
+    }
+
     #sobre{
         display: none;
     }

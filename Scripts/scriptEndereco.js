@@ -22,8 +22,6 @@ function buscarCep(){
                 logradouro.innerText = retorno.logradouro
                 bairro.innerText = retorno.bairro
                 cidade_estado.innerText = `${retorno.localidade}/${retorno.uf}`
-    
-                listaEnderecos.push(JSON.stringify(retorno))
         })  
     }catch{
         window.alert('Não foi possível encontrar o endereço. Verifique o CEP!')
