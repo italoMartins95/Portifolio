@@ -461,7 +461,7 @@ footer img{
     margin: 0 10px;
 }
 
-@media (max-width: 400px){
+@media (max-width: 450px){
     header{
         height: 60px;
     }
@@ -482,6 +482,9 @@ footer img{
 
     #saudacao{
         padding: 50px 25px;
+
+        background-image: url(../Images/backgroundImagePequena.png);
+        background-size: contain;
     }
 
     #saudacao h1{
