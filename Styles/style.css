@@ -130,6 +130,7 @@ main{
 }
 
 .saudacoes{
+    width: 100%;
     opacity: 0;
     transition: 3.5s ease;
 
@@ -534,6 +535,8 @@ footer img{
     #h2UltimosTrabalhos{
        position: absolute;
        top: -20px;
+
+       width: 100%;
 
        display: block;
 
