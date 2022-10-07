@@ -131,3 +131,27 @@
 
     width: auto;
 }
+
+@media (max-width: 450px){
+
+    #buscar_inserir{
+        border: none;
+        background-color: white;
+    }
+
+    #binaryConvert h1::after{
+        display: none;
+    }
+
+    #entradaDiv{
+        width: 95% !important;
+    }
+
+    #binario{
+        width: 200px !important;
+    }
+
+    #resultadoDiv{
+        width: 95% !important;
+    }
+}

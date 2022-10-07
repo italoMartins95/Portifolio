@@ -89,7 +89,7 @@ function openCloseListItensOk(){
     var classe = this.parentNode.className
 
     if(classe == "closeItensOk"){
-        this.parentNode.className = "openItensOk"
+        this.parentNode.className = "openItensOk openItensOkSmall"
         this.src = "Images/close.svg"
     }else{
         this.parentNode.className = "closeItensOk"

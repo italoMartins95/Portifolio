@@ -56,10 +56,6 @@ const scrol = new IntersectionObserver( entry => {
     console.log(entry)
 })
 
-Array.from(document.querySelectorAll('.card')).forEach(element => {
-    scrol.observe(element)
-})
-
 Array.from(document.querySelectorAll('.itensMenuProjetos')).forEach(element => {
     scrol.observe(element)
 })

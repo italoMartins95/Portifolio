@@ -207,3 +207,11 @@
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: none;  /* creates padding around scroll thumb */
 }
+
+@media (max-width: 450px){
+
+.openItensOkSmall img{
+    right: 190px;
+}
+
+}
