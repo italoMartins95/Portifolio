@@ -1,3 +1,5 @@
+const menuHamburguer = document.getElementById('menuHamburguer')
+const menu = document.getElementById('menu')
 const menuCalc = document.getElementById('projectCalc')
 const menuList = document.getElementById('projectLista')
 const menuGaleria = document.getElementById('projetoGaleriaSt')
@@ -8,7 +10,7 @@ const carrosselProjetos = document.getElementById('carrosseContent')
 
 // Funções
 
-function teste(valor){
+function girarCarrossel(valor){
     carrosselProjetos.style.marginLeft = `-${valor}%`
 }
 
@@ -16,26 +18,44 @@ function exibirCardText(id){
     window.alert(id)
 }
 
+function openCloseMenu(){
+    if(Array.from(menu.classList).indexOf('haburguerDisplayNone') == -1){
+       menu.classList.add('haburguerDisplayNone')
+    }else{
+        menu.classList.remove('haburguerDisplayNone')
+    }
+}
+
 // Eventos
 
+menuHamburguer.addEventListener('click' , openCloseMenu)
+
 menuCalc.addEventListener('click' , () => {
-    teste(0)
+    girarCarrossel(0)
 })
 
 menuList.addEventListener('click' , () => {
-    teste(100)
+    girarCarrossel(100)
 })
 
 menuGaleria.addEventListener('click' , () => {
-    teste(200)
+    girarCarrossel(200)
 })
 
 menuConversor.addEventListener('click' , () => {
-    teste(300)
+    if(window.screen.width <= 450){
+        girarCarrossel(200)
+    }else{
+        girarCarrossel(300)
+    }
 })
 
 menuEndereco.addEventListener('click' , () => {
-    teste(400)
+    if(window.screen.width <= 450){
+        girarCarrossel(300)
+    }else{
+        girarCarrossel(400)
+    }
 })
 
 
